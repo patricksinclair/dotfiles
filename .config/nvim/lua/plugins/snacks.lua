@@ -1,0 +1,37 @@
+-- ~/.config/nvim/lua/plugins/snacks.lua
+return {}
+-- return {
+--   "folke/snacks.nvim",
+--   ---@type snacks.Config
+--   opts = {
+--     dim = {
+--       enabled = true, -- 🔥 this is the key
+--       -- optional tuning:
+--       -- shade = 0.65,
+--       -- exclude = { "TelescopePrompt", "WhichKey" },
+--     },
+--   },
+--   config = function(_, opts)
+--     local snacks = require("snacks")
+--     snacks.setup(opts)
+--     -- force-enable dimming
+--     if snacks.dim then
+--       snacks.dim.enable()
+--     end
+--   end,
+-- }
+--
+-- return {
+--   {
+--     "folke/snacks.nvim",
+--     opts = function(_, opts)
+--       opts.dim = opts.dim or {}
+--       opts.dim.enabled = true
+--     end,
+--     config = function(_, opts)
+--       require("snacks").setup(opts)
+--       -- force enable dim on startup
+--       require("snacks").dim.enable()
+--     end,
+--   },
+-- }
