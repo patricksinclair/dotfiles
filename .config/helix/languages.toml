@@ -1,0 +1,30 @@
+# ~/.config/helix/languages.toml
+
+####################
+# Python
+####################
+
+[[language]]
+name = "python"
+language-servers = ["pyright"]
+auto-format = true
+formatter = { command = "black", args = ["-"] }
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
+
+####################
+# Rust
+####################
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer"]
+formatter = { command = "rustfmt", args = [] }
+auto-format = true
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
