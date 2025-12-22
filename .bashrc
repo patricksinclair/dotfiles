@@ -117,7 +117,7 @@ fi
 
 . "$HOME/.local/bin/env"
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 . "$HOME/.cargo/env"
 
 if [[ ! "$PATH" == *"$HOME/.fzf/bin"* ]]; then
@@ -125,4 +125,5 @@ if [[ ! "$PATH" == *"$HOME/.fzf/bin"* ]]; then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-alias dotfiles='/usr/bin/git --git-dir=/home/patrick2/.dotfiles/ --work-tree=/home/patrick2'
+
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
