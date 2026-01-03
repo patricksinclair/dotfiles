@@ -3,3 +3,5 @@
 -- Add any additional options here
 vim.opt.clipboard = ""
 vim.opt.scrolloff = 10
+
+vim.opt.termguicolors = true

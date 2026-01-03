@@ -5,14 +5,45 @@
 --     priority = 1000, -- make sure to load this before all the other start plugins
 --     config = function()
 --       require("onedark").setup({
---         style = "warmer",
+--         style = "darker",
 --       })
 --       -- Enable theme
 --       require("onedark").load()
 --     end,
 --   },
 -- }
-
+return {
+  {
+    "sainnhe/edge",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      -- Optionally configure and load the colorscheme
+      -- directly inside the plugin declaration.
+      vim.g.edge_enable_italic = 0
+      vim.g.edge_style = "default"
+      vim.g.edge_better_performance = 1
+      -- vim.g.edge_disable_italic_comment = 1
+      vim.cmd.colorscheme("edge")
+    end,
+  },
+}
+-- return {
+--   {
+--     "marko-cerovac/material.nvim",
+--     priority = 1000,
+--
+--     config = function()
+--       require("material").setup({
+--         -- style = "darker",
+--         vim.g.material_style="deep ocean",
+--       })
+--       -- Enable theme
+--       -- require("onedark").load()
+--     end,
+--   },
+-- }
+--
 -- return {
 --   {
 --     "rebelot/kanagawa.nvim",
@@ -50,16 +81,16 @@
 --   },
 -- }
 
-return {
-  {
-    "EdenEast/nightfox.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      vim.cmd("colorscheme duskfox")
-    end,
-  },
-}
+-- return {
+--   {
+--     "EdenEast/nightfox.nvim",
+--     lazy = false,
+--     priority = 1000,
+--     config = function()
+--       vim.cmd("colorscheme duskfox")
+--     end,
+--   },
+-- }
 -- return {
 --   "github-main-user/lytmode.nvim",
 --   lazy = false,
@@ -71,10 +102,10 @@ return {
 --   end,
 -- }
 -- -- Configure LazyVim to load gruvbox
--- {
+-- return {
 --   "LazyVim/LazyVim",
 --   opts = {
 --     colorscheme = "gruvbox",
 --   },
--- },
+--   -- },
 -- }
