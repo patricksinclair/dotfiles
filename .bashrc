@@ -129,3 +129,7 @@ fi
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+eval "$(zoxide init bash)"
+alias cd='z'
+
+alias kvim="NVIM_APPNAME=kickstart.nvim nvim"
