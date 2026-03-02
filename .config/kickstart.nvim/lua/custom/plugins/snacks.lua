@@ -18,6 +18,13 @@ return {
     scope = { enabled = true },
     scroll = { enabled = true },
     statuscolumn = { enabled = true },
+    terminal = {
+      enabled = true,
+      win = {
+        position = 'float', -- floating terminal
+        border = 'rounded',
+      },
+    },
     words = { enabled = true },
   },
 }

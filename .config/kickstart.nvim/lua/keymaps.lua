@@ -62,3 +62,5 @@ vim.keymap.set('v', '<', '<gv', { desc = 'Indent left and reselect' })
 vim.keymap.set('v', '>', '>gv', { desc = 'Indent right and reselect' })
 
 vim.keymap.set('n', 'J', 'mzJ`z', { desc = 'Join lines and keep cursor position' })
+
+vim.keymap.set({ 'n', 't' }, '<C-_>', function() Snacks.terminal.toggle() end, { desc = 'Toggle terminal.' })
