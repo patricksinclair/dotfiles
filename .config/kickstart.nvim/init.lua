@@ -7,8 +7,6 @@ vim.g.maplocalleader = ' '
 require 'options'
 require 'keymaps'
 require 'autocommands'
--- [[ Basic Keymaps ]]
---  See `:help vim.keymap.set()`
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
@@ -51,7 +49,7 @@ require('lazy').setup({
   --
   -- Use the `dependencies` key to specify the dependencies of a particular plugin
 
-  --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua`.
+  -- Add your plugins to `lua/custom/plugins/*.lua`.
   { import = 'custom.plugins' },
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
